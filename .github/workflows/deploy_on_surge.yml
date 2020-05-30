@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: 12
     - name: Installing Surge
-    run: npm install -g surge
-    - name: Running Surge
+      run: npm install -g surge
+    - name: Run Surge
       run: surge ./ bootcamp_lec1.surge.sh --token ${{secrets.SURGE_TOKEN}}
